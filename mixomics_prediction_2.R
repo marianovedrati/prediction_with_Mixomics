@@ -1,5 +1,4 @@
 ###############DIABLO PER FARE PREVISIONI
-
 df <- read.csv2("count_norm_importance.csv",row.names=1)
 
 
@@ -36,13 +35,10 @@ df <- df[n,]
 rownames(df)==citochine_k$Sample.ID #verifico che l'ordine sia corretto
 
 
-
 ###########SPLITTO I DATI
 
 install.packages("caTools")
 library(caTools)
-
-
 
 ind <- sample.split(Y =DESC_table$Sample.ID, SplitRatio = 0.7)
 
